@@ -15,7 +15,12 @@ steps:
     versionSpec: '18.x'
   displayName: 'Install Node.js'
 
+- checkout: self
+  persistCredentials: true
+
 - script: |
+    git config user.email "massoumeharmonie@gmail.com" 
+    git config user.name "audreymengue"
     npm install
-    npm run build
+    npm run deploy -- -r https://$(NEW_VAR)@github.com/audreymengue/lastdemo
   displayName: 'npm install and build'
