@@ -22,5 +22,5 @@ steps:
     git config user.email "massoumeharmonie@gmail.com" 
     git config user.name "audreymengue"
     npm install
-    npm run deploy -- -r https://$(GITHUB_PAT)@github.com/audreymengue/lastdemo
+    npm run deploy -- -r https://$(NEW_VAR)@github.com/audreymengue/lastdemo
   displayName: 'npm install and build'
