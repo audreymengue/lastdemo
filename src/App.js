@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-        Learn Azure devops
+        Learn Azure deveops for your own good.
         </a>
       </header>
     </div>
